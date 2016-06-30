@@ -1,8 +1,16 @@
-<!-- fix transparency -->
-<!-- fix li css -->
-<!-- actions when buttons are clicked -->
-<!-- textroo -->
-<!-- add logo -->
+<!-- TODO -->
+<!-- fix banner not going to the end -->
+<!-- add icons for contact -->
+
+<!-- QUESTIONS -->
+<!-- hide anything on mobile? like the buttons for the tables? -->
+<!-- general line spacing -->
+<!-- any addition JS animation?  -->
+<!-- any changes to colors/ hovers? -->
+
+<!-- Ellis -->
+<!-- add icons for contact in nav; on click show -->
+<!-- add stats in about -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +22,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>T3</title>
+    <title>T3 Intelligence</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css">
@@ -33,10 +41,10 @@
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
+    <!-- favicon -->
+    <link rel="icon" href="/static/img/favicon/logo.ico">
+
 
 </head>
 
@@ -52,7 +60,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img id="logo" class="img-responsive" src="/static/img/t3-logo.png"></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -78,16 +86,16 @@
     </nav>
 
     <header>
-        <!-- <div id="transparent-overlay">
-        </div>
-         -->
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-8 col-md-offset-4 col-xs-12 header-content" >
+                <div class="col-md-8 col-md-offset-2 col-xs-12 header-content">
+                    <div id="lightbulb">
+                        <img class="img-responsive" src="static/img/lightbulb.png">
+                    </div>
                     <p class="large-header-home">Find your perfect candidate faster.</p>
                     <hr class="large-header-home">
-                    <p class="sub-header-home"  style="border:black 5px solid; word-wrap:break-word"">Our specially trained, passionate resesarch team and best-of-breed methodology find the right talent with the most relevant experience.</p>
-                    <a href="#about" class="btn btn-primary btn-xl page-scroll">Get Started</a>
+                    <p class="sub-header-home">Our specially trained, passionate resesarch team and best-of-breed methodology find the right talent with the most relevant experience.</p>
+                    <a href="#about" id="get-started" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
                 </div>
             </div>
         </div>
@@ -100,13 +108,6 @@
                     <p class="large-header-content">T3 Intelligence</p>
                     <hr>
                     <p class="copy-content">As the war for talent continues to heat up, recruiters and hiring managers need every advantage available to maximize the success of their business.  Recruiting is primarily a sales role, and because of that, hiring managers often can’t prioritize conducting exhaustive research of candidates. That's where T3 Intelligence specializes. The candidate list and contact information we provide allows the recruiter to start reaching out to potential candidates instantly without wasting their time on background. The talent market snapshot we develop makes a reach-out campaign so easy and fast, an expensive dedicated recruiter is often unnecessary. </p>
-                    <p class="small-header-content">Swat Research Team</p>
-                    <p class="copy-content">Our specially trained, passionate research team and best-of-breed methodology, originally implemented by Apple in 2000, finds the right talent with the most relevant experience.</p>
-                    <p class="small-header-content">Higher Productivity</p>
-                    <p class="copy-content">We provide everything to immediately launch an outreach campaign. Our model allows any executive in your company to conduct a search with the minimum time invested.</p>
-                    <p class="small-header-content">Consistent Results</p>
-                    <p class="copy-content">We engineer the flow of a steady talent pipeline, designed to give constant hiring support. Find the perfect candidate faster.</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Get Started!</a>
                 </div>
             </div>
         </div>
@@ -120,33 +121,394 @@
                 </div>
             </div>
         </div>
+
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-10 col-md-offset-1 col-xs-12">
+                <div class="col-xs-12">
                     <p class="large-header-content">Consistent Agile Pipeline</p>
                     <hr>
-                    <p class="copy-content">Supporting one recruiter or a whole team, we provide a consistent weekly flow of prospective candidates to fuel the search process. This powerful tool allows the recruiting team to focus their efforts on contact and discussions with qualified candidates instead of endlessly combing the internet. This shift yields faster and more efficient search process and higher quality candidates. We assure minimum numbers of qualified candidates per hour of search, and a detailed target company ecosystem of market research to provide scope context to the market conditions.</p>
-                    <p class="small-header-content">Deliverables</p>
-                    <ul class="copy-content">
-                        <li>At least three names with contact information per hour in candidate list or flowchart</li>
-                        <li>Ecosystem of market research on target companies</li>
-                        <li>Results within 10 days</li>
-                    </ul>
+                </div>
+            </div>
+
+            <div class="row" style="display: flex; justify-content: center">
+                <div class="col-md-8 col-xs-12">
+                    <table class="strategy-table" style="width: 100%">
+                         <col style="width:45%">
+                         <col style="width:5%">
+                         <col style="width:45%">                  
+                        <tr>  
+                            <td>
+                                <p class="copy-content">Supporting one recruiter or a whole team, we provide a consistent weekly flow of prospective candidates to fuel the search process. This powerful tool allows the recruiting team to focus their efforts on contact and discussions with qualified candidates instead of endlessly combing the internet. This shift yields faster and more efficient search process and higher quality candidates. We assure minimum numbers of qualified candidates per hour of search, and a detailed target company ecosystem of market research to provide scope context to the market conditions.</p>
+                            </td>
+                            <td>
+                                <span class="glyphicon glyphicon-triangle-right arrow" aria-hidden="true"></span>
+                            </td>
+                            <td class="deliverables">
+                                <div>
+                                    <p class="small-header-content">Deliverables</p>
+                                    <ul class="copy-content">
+                                        <li>At least three names with contact information per hour in candidate list or flowchart</li>
+                                        <li>Ecosystem of market research on target companies</li>
+                                        <li>Results within 10 days</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-xs-12">
                     <p class="large-header-content">Single Search / Fixed Fee</p>
                     <hr>
-                    <p class="copy-content">Supporting a single search, this is designed for an in-depth search with predictable cost. We work in constant communication with recruiters and hiring managers to ensure only the most relevant results. We assure minimum numbers of qualified candidates with contact information in addition to a detailed target company ecosystem of market research to provide scope context to the market conditions.</p>
-                    <p class="small-header-content">Deliverables</p>
-                    <ul class="copy-content">
-                        <li>Ecosystem of market research on target companies</li>
-                        <li>Results within 14 days</li>
-                    </ul>
+                </div>
+            </div>
+            <div class="row" style="display: flex; justify-content: center">
+                <div class="col-md-8 col-xs-12">
+                    <table class="strategy-table" style="width: 100%">
+                         <col style="width:45%">
+                         <col style="width:5%">
+                         <col style="width:45%">                  
+                        <tr>  
+                            <td>
+                                <p class="copy-content">Supporting a single search, this is designed for an in-depth search with predictable cost. We work in constant communication with recruiters and hiring managers to ensure only the most relevant results. We assure minimum numbers of qualified candidates with contact information in addition to a detailed target company ecosystem of market research to provide scope context to the market conditions.</p>
+                            </td>
+                            <td>
+                                <span class="glyphicon glyphicon-triangle-right arrow" aria-hidden="true"></span>
+                            </td>
+                            <td class="deliverables">
+                                <div>
+                                    <p class="small-header-content">Deliverables</p>
+                                    <ul class="copy-content">
+                                        <li>Ecosystem of market research on target companies</li>
+                                        <li>Results within 14 days</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-xs-12">
                     <p class="large-header-content">Search Strategy</p>
                     <hr>
-                    <p class="copy-content">We begin a search with the background and context of the role in the company. We do background research on the industry and market conditons of the role to establish an ecosystem of companies and industries that are related to the job and the quality of talent at each company. From there we develop an in-depth search string strategy across multiple sources to find everyone who is going to be relevant in the ecosystem. After examining each profile we hand pick the best and most qualified individuals and find their contact information and social media profiles.</p>
-                    <div class="flex-container">
-                        <a href="" class="btn btn-primary btn-xl page-scroll">Sample Discovery Process</a>
-                        <a href="" class="btn btn-primary btn-xl page-scroll">Sample Job Description</a>
-                        <a href="" class="btn btn-primary btn-xl page-scroll">Sample Candidate List</a>
+                </div>
+            </div>
+            <div class="row" style="display: flex; justify-content: center">
+                <div class="col-md-8 col-xs-12">
+                    <table class="strategy-table" style="width: 100%">
+                         <col style="width:45%">
+                         <col style="width:5%">
+                         <col style="width:45%">                  
+                        <tr>  
+                            <td>
+                                <p class="copy-content">We begin a search with the background and context of the role in the company. We do background research on the industry and market conditons of the role to establish an ecosystem of companies and industries that are related to the job and the quality of talent at each company. From there we develop an in-depth search string strategy across multiple sources to find everyone who is going to be relevant in the ecosystem. After examining each profile we hand pick the best and most qualified individuals and find their contact information and social media profiles.</p>
+                            </td>
+                            <td>
+                                <span class="glyphicon glyphicon-triangle-right arrow" aria-hidden="true"></span>
+                            </td>
+                            <td class="deliverables">
+                                <div>
+                                    <p class="small-header-content">Deliverables</p>
+                                    <ul class="copy-content">
+                                        <li>Discovery List</li>
+                                        <li>Product List</li>
+                                        <li>Candidate List</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-xs-12">       
+                    <div id="sample-buttons">
+                        <div class="flex-container">
+                            <button id="discovery-button" class="btn btn-primary btn-xl page-scroll" type="button" data-toggle="collapse" data-target="#discovery-div" aria-expanded="false" aria-controls="collapseExample">Sample Discovery List</button>
+                            <button id="product-button" class="btn btn-primary btn-xl page-scroll" type="button" data-toggle="collapse" data-target="#product-div" aria-expanded="false" aria-controls="collapseExample">Sample Product List</button>
+                            <button id="candidate-button" class="btn btn-primary btn-xl page-scroll" type="button" data-toggle="collapse" data-target="#candidate-div" aria-expanded="false" aria-controls="collapseExample">Sample Candidate List</button>
+
+                        </div>
+
+                        <div class="collapse" id="discovery-div">
+                            <div class="flex-container-sample">
+                                <div class="discovery">
+                                    <p class="copy-content"><b>Academy DSD Manufacturers</b><br/>
+                                    Bimbo Bakeries<br/>
+                                    Cadbury Schweppes<br/>
+                                    Campbell Soup <br/>
+                                    Coca-Cola<br/>
+                                    Dean Foods<br/>
+                                    Flowers Foods <br/>
+                                    InBev<br/>
+                                    Kellogg Company<br/>
+                                    Kraft/Mondelez<br/>
+                                    MillerCoors<br/>
+                                    Nestle (Waters, Dreyers)<br/>
+                                    PepsiCo <br/>
+                                    Schwan’s Consumer Brands<br/>
+                                    Snyder’s-Lance, Inc<br/></p>
+                                </div>
+                                <div class="discovery">
+                                    <p class="copy-content"><b>Other Beverage Manufacturers</b><br/>
+                                    Asahi<br/>
+                                    Bacardi<br/>
+                                    Beam (Fortune Brands)<br/>
+                                    Beck’s<br/>
+                                    Brown Forman<br/>
+                                    Carslberg<br/>
+                                    Constellation Brands<br/>
+                                    Cott Corporation<br/>
+                                    Diageo<br/>
+                                    Dr. Peppper/Snapple<br/>
+                                    E&amp;J Gallo<br/>
+                                    Florida’s Natural<br/>
+                                    Foster’s Group<br/>
+                                    Grupo Modelo<br/>
+                                    Hansen’s Natural<br/>
+                                    Heineken<br/>
+                                    Leffe<br/>
+                                    Moet Hennessy/Louis Vuitton<br/>
+                                    Ocean Spray<br/>
+                                    Pabst Brewing<br/>
+                                    Pernod Ricard<br/>
+                                    Remy Cointreau<br/>
+                                    Sapporo Holdings<br/>
+                                    Southern Wine &amp; Spirits<br/>
+                                    Sunny Delight Beverages<br/>
+                                    Suntory Holdings<br/>
+                                    The Boston Beer Co.<br/>
+                                    Treasury Wine &amp; Estates<br/>
+                                    Welch Foods<br/>
+                                    William Grant &amp; Sons<br/></p>
+                                </div>
+                                <div class="discovery">
+                                    <p class="copy-content"><b>Other CPG Manufacturers</b><br/>
+                                        Avon<br/>
+                                        Beiersdorf<br/>
+                                        Chobani<br/>
+                                        Clorox<br/>
+                                        Colgate-Palmolive<br/>
+                                        ConAgra<br/>
+                                        DelMonte<br/>
+                                        Diamond Foods<br/>
+                                        Dole Food Company<br/>
+                                        Estee Lauder<br/>
+                                        General Mills<br/>
+                                        GSK<br/>
+                                        Group Danone<br/>
+                                        Henkel<br/>
+                                        Hershey<br/>
+                                        Hillshire Brands<br/>
+                                        HJ Heinz<br/>
+                                        Johnson &amp; Johnson<br/>
+                                        Kimberly-Clark<br/>
+                                        L’Oreal<br/>
+                                        Mars/Wrigley<br/>
+                                        McKee Foods (Little Debbie)<br/>
+                                        Pinnacle Foods<br/>
+                                        Procter &amp; Gamble (Gillette)<br/>
+                                        Reckitt Benckiser<br/>
+                                        Sargento Foods<br/>
+                                        SC Johnson<br/>
+                                        Tyson Foods<br/>
+                                        Unilever<br/>
+                                        Other FMCG Manufacturers<br/>
+                                        Adidas<br/>
+                                        Apple<br/>
+                                        Cisco<br/>
+                                        Dell<br/>
+                                        HP<br/>
+                                        IBM<br/>
+                                        Mattel<br/>
+                                        Microsoft<br/>
+                                        Nike (Converse)<br/>
+                                        Nintendo<br/>
+                                        PUMA<br/>
+                                        Reebok<br/>
+                                        Sony<br/>
+                                        Timberland<br/>
+                                        Under Armour<br/>
+                                    </p>
+                                </div>
+                                <div class="discovery">
+                                    <p class="copy-content"><b>Other Supply Chain: Big Box/Mass Retail</b><br/>
+                                        Amazon<br/>
+                                        Bed Bath &amp; Beyond<br/>
+                                        Best Buy<br/>
+                                        BJ’s<br/>
+                                        Costco<br/>
+                                        CVS<br/>
+                                        HEB<br/>
+                                        Home Depot<br/>
+                                        Kroger<br/>
+                                        Lowe’s<br/>
+                                        Macy’s<br/>
+                                        Meijer<br/>
+                                        Safeway<br/>
+                                        Sears (Kmart)<br/>
+                                        Target<br/>
+                                        Toys R Us<br/>
+                                        Walgreens<br/>
+                                        Wal-Mart (Sam’s Club)<br/>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="product-div">
+                            <p class="large-header-content">Product Description</p>
+                            <hr>
+                            <p class="copy-content">Multi-phase research strategy based on client job specification generates a high quality, and highly targeted list of prospective candidates. This data includes name, company, title, email, phone, address and other links to social media profiles and relevant webpages.<p>
+                            
+                            <p class="small-header-content">Research Technique and Process</p>
+                            <div class="flex-container-sample">
+                                <div class="product">
+                                    <p class="copy-content"><b>Define Domain</b></p>
+                                    <p class="copy-content">We begin by researching the background on an open job and the company/industry then strategically determine which industry segments and specific companies are going to provide richest pool of qualified candidates.</p>
+                                </div>
+                                <div class="product">
+                                    <p class="copy-content"><b>Define Search Strategy and Develop Selection Strings</b></p>
+                                    <p class="copy-content">Next we develop a search strategy encompassing many different dimensions of a profile, not simply restricted to key word hits. This multi-dimensional search tool will qualify and disqualify on as many as 100 specific boolean search terms.</p>
+                                </div>
+                                <div class="product">
+                                    <p class="copy-content"><b>Expert Review</b></p>
+                                    <p class="copy-content">Once our research analysts develop a talent pool, its reviewed by our Executive Team to assure quality and applicability to each individual search.</p>
+                                </div>
+                                <div class="product">
+                                    <p class="copy-content"><b>Contact Build Out</b></p>
+                                    <p class="copy-content">Once the candidate list is properly refined we build out each profile with contact information, professional profiles and social media profiles.</p>
+                                </div>
+                            </div>
+                            
+                            <p class="small-header-content">Business Results / Value Proposition</p>
+                            <div class="flex-container-sample" style="text-align: center">
+                              <div class="product">
+                                    <p class="copy-content"><b>Search Results</b>
+                                        <ul>
+                                            <li>Faster launch - recruiters can call dozens, and email dozens, more candidates on the first day the search is formally launched.</li>
+                                            <li>Better quality - professional research provides a greater number of qualified prospective candidates driving better results and broader selection of finalists giving management more, and better, candidates to choose from.</li>
+                                            <li>Ongoing T3 research for a single high volume role with multiple positions with the same title will provide the recruiting team with the broadest and deepest pool of talent possible.</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="product">       
+                                <p class="copy-content"><b>Team Results</b>
+                                        <ul>
+                                            <li>Increased recruiting team performance - improving recruiter placements per year, speed to completion, and placement retention rate, due to better overall fit and quality.</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="product">
+                                    <p class="copy-content"><b>Strategic Advantage</b>
+                                        <ul>
+                                            <li>Methodical research - Research based on strategy and not just available network opens up the potential pool sourced from hundreds to hundreds of millions collectively elevating the talent pool of the company.</li>
+                                        </ul>
+                                    </p>
+                                </div>
+                                <div class="product">
+                                    <p class="copy-content"><b>Common Problems Address by T3 Research</b>
+                                        <ul>
+                                            <li>Prolonged search timelines and searches that seem to go on forever</li>
+                                            <li>Small candidate slates, limiting choices and forcing compromise to fill positions</li>
+                                            <li>Spikes in search load overloading recruiting team</li>
+                                            <li>Poor recruiting team retention and morale</li>
+                                            <li>Poor quality candidate pools</li>           
+                                        </ul>
+                                    </p> 
+                                </div>                           
+                            </div>
+                        </div> 
+
+                        <div class="collapse" id="candidate-div">
+                            <div class="flex-container">
+                                <table id="candidate" style="width: 95%" class="table-responsive table-hover">
+                                    <col style="width:4%"> <!-- first -->
+                                    <col style="width:5%"> <!-- last -->
+                                    <col style="width:9%"> <!-- company -->
+                                    <col style="width:11%"> <!-- title -->
+                                    <col style="width:9%"> <!-- email -->
+                                    <col style="width:6%"> <!-- phone -->
+                                    <col style="width:7%"> <!-- street -->
+                                    <col style="width:4%"> <!-- city -->
+                                    <col style="width:4%"> <!-- state -->
+                                    <col style="width:3%"> <!-- zip -->
+                                    <col style="width:16%"> <!-- facebook -->                        
+                                    <col style="width:16%"> <!-- linkedin -->
+                                    <thead>
+                                        <tr>
+                                            <th>First</th><th>Last</th><th>Company</th><th>Title</th><th>Email</th><th>Phone</th><th>Street</th><th>City</th><th id="state">State</th><th>Zip</th><th>Facebook</th><th>LinkedIn</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Stu</td><td>Ratner</td><td>Southern Wine and Spirits of Arizona</td><td>Off Premise General Sales Manager - Starz Division</td><td>sratner@southernwine.com</td><td>602-569-9258</td><td>4152 E Hancock Dr</td><td>Phoenix</td><td>AZ</td><td>85028</td><td>https://www.facebook.com/stuart.ratner.5?fref=ts</td><td>https://www.linkedin.com/pub/stu-ratner/9/b39/a71</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nicolas</td><td>Mills</td><td>Republic National Distributing Co</td><td>Fine Wine Specialist</td><td>nicolas.mills@rndc-usa.com</td><td></td><td></td><td></td><td></td><td></td><td></td><td>https://www.linkedin.com/pub/nicolas-mills/18/31/3bb</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Currie</td><td>Hemenway</td><td>Southern Wine &amp; Spirits</td><td>District Manager</td><td>chemenway@southernwine.com</td><td>480-284-6558</td><td>11445 E Via Linda</td><td>Scottsdale</td><td>AZ</td><td>85259</td><td>https://www.facebook.com/curriehemenway?fref=ts</td><td>https://www.linkedin.com/in/curriehemenway</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Adam</td><td>Lauritson</td><td>Banfi Vintners - Excelsior Sales Division</td><td>Market Manager AZ/NM</td><td>alauritson@banfi.com</td><td>480-607-4310</td><td>8008 E Del Joya Dr</td><td>Scottsdale</td><td>AZ</td><td>85258</td><td></td><td>https://www.linkedin.com/pub/adam-lauritson/1/575/16</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chris</td><td>Costa</td><td>Southern Wine &amp; Spirits of Arizona</td><td>Account Executive</td><td>ccosta@southernwine.com</td><td></td><td></td><td></td><td></td><td></td><td></td><td>https://www.linkedin.com/pub/chris-costa/19/454/a47</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jason</td><td>Kohl</td><td>Royal Cup Coffee</td><td>District Manager</td><td>jkohl@royalcupcoffee.com</td><td>623-236-9362</td><td>10857 W Cottonwood Ln</td><td>Avondale</td><td>AZ</td><td>85392</td><td>https://www.facebook.com/jason.kohl.927?fref=ts</td><td>https://www.linkedin.com/pub/jason-kohl/69/ba0/a72</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jessica</td><td>Meyer</td><td>PepsiCo - Frito Lay</td><td>Sr. Customer Account Manager - Kroger</td><td>Jessica.Meyer@pepsico.com</td><td>480-705-0031</td><td>2922 E Redwood Pl</td><td>Chandler</td><td>AZ</td><td>85286</td><td>https://www.facebook.com/jessie.stoll.3?fref=ts</td><td>https://www.linkedin.com/pub/jessica-meyer/a/a17/714</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dean</td><td>Kowal</td><td>Snyder's-Lance Inc.</td><td>District Sales Manager</td><td>dkowal@snyderslance.com</td><td>602-516-1281</td><td>5921 W Calle Lejos</td><td>Glendale</td><td>AZ</td><td>85310</td><td>https://www.facebook.com/dean.kowal.7?fref=ts</td><td>https://www.linkedin.com/pub/dean-kowal/6a/145/36</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Desiree</td><td>Zahno-Curley</td><td>barkTHINS snacking chocolate by ripple brand collective</td><td>Regional Brand Manager</td><td>dzahno-curley@barkthins.com</td><td>480-736-9387</td><td>2018 E Aspen Dr</td><td>Tempe</td><td>AZ</td><td>85282</td><td>https://www.facebook.com/desiree.zahnocurley?fref=ts</td><td>https://www.linkedin.com/pub/desiree-zahno-curley/8/22b/ab9</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dave</td><td>Stone</td><td>Sysco Arizona</td><td>District Sales Manager</td><td>dstone@sysco.com</td><td></td><td></td><td></td><td></td><td></td><td></td><td>https://www.linkedin.com/pub/dave-stone/39/542/331</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Wesley</td><td>Bliler</td><td>Coca-Cola Refreshments</td><td>Area Sales Manager</td><td>wbliler@cokecce.com</td><td>623-825-8613</td><td>7273 W Piute Ave</td><td>Glendale</td><td>AZ</td><td>85308</td><td>https://www.facebook.com/wesley.bliler?fref=ts</td><td>https://www.linkedin.com/pub/wesley-bliler/57/973/2b4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ryan</td><td>Mooney</td><td>Nature's Path Foods</td><td>District Sales Manager - Western US</td><td>rmooney@naturespath.com</td><td></td><td></td><td></td><td></td><td></td><td></td><td>https://www.linkedin.com/pub/ryan-mooney/4/5b/460</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Steve</td><td>Gokey</td><td>General Mills</td><td>Zone Manager (Midwest)</td><td>steve.gokey@genmills.com</td><td></td><td></td><td></td><td></td><td></td><td></td><td>https://www.linkedin.com/pub/steve-gokey/21/360/387</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rob</td><td>Divine</td><td>Southern Wine and Spirits</td><td>Director of Chain sales</td><td>rdivine@southernwine.com</td><td></td><td></td><td></td><td></td><td></td><td>https://www.facebook.com/rob.divine.5?fref=ts</td><td>https://www.linkedin.com/pub/rob-divine/1a/a1b/a6a</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michael</td><td>Pettit</td><td>Mission Foods</td><td>District Sales Manager</td><td>mpettit@gruma.com</td><td>704-684-3090</td><td>4766 E White Aster St</td><td>Phoenix</td><td>AZ</td><td>85044</td><td></td><td>https://www.linkedin.com/pub/michael-pettit/14/586/ab0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Seth</td><td>Thomson</td><td>Snack Factory-Pretzel Crisps</td><td>Project Manager</td><td>sthompson@pretzelcrisps.com</td><td>480-831-1476</td><td>1101 W Sherri Dr</td><td>Gilbert</td><td>AZ</td><td>85233</td><td></td><td>https://www.linkedin.com/in/seththomson</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Steve</td><td>Kelley</td><td>Southern Wine and Spirits</td><td>On Premise General Sales Manager</td><td>skelley@southernwine.com</td><td></td><td></td><td></td><td></td><td></td><td></td><td>https://www.linkedin.com/pub/steve-kelley/50/a88/697</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nicolas</td><td>Rodriguez</td><td>Alliance Beverage</td><td>Division Manager</td><td>nicolasr@abdc-az.com</td><td></td><td></td><td></td><td></td><td></td><td></td><td>https://www.linkedin.com/pub/nicolas-rodriguez/7/bb9/3b3</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>        
             </div>
@@ -192,6 +554,17 @@
         </div>
     </section>
 
+    <footer>
+        <p class="copy-content"><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true">2016</span></p>
+        <p class="copy-content">T3 Search, LLC.  All rights reserved.</p>
+    </footer>
+    
+
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
     <!-- jQuery -->
     <script src="static/js/jquery.js"></script>
 
@@ -208,13 +581,29 @@
     <script src="static/js/creative.js"></script>
 
     <script>
-    var headerHeight = $('header').height();
-    $('#transparent-overlay').height(headerHeight);
+    // var headerHeight = $('header').height();
+    // $('#transparent-overlay').height(headerHeight);
 
-    var picHeight = $('#bio').height();
-    $('#bio-pic').height(picHeight);
+    // var picHeight = $('#bio').height();
+    // $('#bio-pic').height(picHeight);
 
+    $('#discovery-button').click(function(e){
+        $('#product-div').removeClass('in');
+        $('#candidate-div').removeClass('in');
+    });
+    $('#product-button').click(function(e){
+        $('#discovery-div').removeClass('in');
+        $('#candidate-div').removeClass('in');
+    });
+    $('#candidate-button').click(function(e){
+        $('#product-div').removeClass('in');
+        $('#discovery-div').removeClass('in');
+    });
+    
+    
     </script>
+
+
 
 </body>
 

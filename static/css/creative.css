@@ -9,9 +9,6 @@ body {
   height: 100%;
   width: 100%;
 }
-body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-}
 hr {
   border-color: #65a82e;
   border-width: 3px;
@@ -30,21 +27,52 @@ a:hover,
 a:focus {
   color: #eb3812;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-}
 p {
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   word-wrap: break-word;
   text-align: center;
 }
+#candidate td {
+  font-size: 8px;
+  color: #302a26;
+  font-family: 'Maven Pro', sans-serif;
+  word-wrap: break-word;
+
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+}
+th {
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  border-top: 1px solid #d3d3d3;
+  font-size: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+table {
+  table-layout: fixed;
+  margin-top: 15px;
+  margin-right: 5px;
+  margin-left: 5px; 
+}
+.strategy-table td {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+ul {
+    list-style-position: inside;
+    padding: 0;
+}
+
 .bg-primary {
   background-color: #65a82e;
 }
@@ -142,6 +170,10 @@ aside {
   .navbar-default.affix .nav > li > a:focus:hover {
     color: #65a82e;
   }
+  .navbar-default.affix #logo {
+    /*background-color: red;*/
+    -webkit-filter: brightness(100%) invert(0%);
+  }
 }
 header {
   position: relative;
@@ -152,51 +184,25 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/home-background.jpg');
+  background-image: url('../img/home-background2.jpg');
   text-align: center;
   color: white;
-  /*opacity: 0.7;*/
 }
-/*
-header::after {
-  content: "";
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  /*background-image: url('../img/home-background.jpg');*/
-/*  opacity: 0.7;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-}
-*/
-header .header-content {
-  /*position: relative;*/
+footer {
   text-align: center;
-  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #d3d3d3;  
+}
+footer p {
+  margin-bottom: 0px;
+  color: gray !important;
+}
+header .header-content {
+  text-align: center;
+  /*text-transform: uppercase;*/
   padding: 100px 100px;
-  /*width: 100%*/
 }
-/*header .header-content .header-content-inner h1 {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-header .header-content .header-content-inner hr {
-  margin: 30px auto;
-}
-header .header-content .header-content-inner p {
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
-  margin-bottom: 50px;
-}*/
 @media (min-width: 768px) {
   header {
     min-height: 100%;
@@ -448,18 +454,19 @@ body {
   padding-bottom: 80px;
 }
 #services-div {
-  background-image: url('../img/services.jpg');
+  background-image: url('../img/services2.jpg');
 }
 #people-div {
-  background-image: url('../img/people.jpg');
+  background-image: url('../img/people2.jpg');
 }
 #contact-div {
-  background-image: url('../img/contact.jpg'); 
+  background-image: url('../img/contact2.jpg'); 
 }
 
 .large-header-home {
   font-size: 40px;
   color: #ffffff;
+  text-transform: uppercase;
   font-family: 'Libre Baskerville', serif;
 }
 .sub-header-home {
@@ -478,13 +485,92 @@ body {
   color: #65a82e;
   font-family: 'Libre Baskerville', serif;
 }
-.copy-content {  
+li, .copy-content {  
   font-size: 14px;
   color: #302a26;
   font-family: 'Maven Pro', sans-serif;
+  text-align: center;
 }
 .flex-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: flex-end;
+}
+#lightbulb {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.flex-container-sample {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#sample-buttons {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f5f3f1; 
+}
+#product-div {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.product, .discovery {
+  width: 25%;
+  padding-right: 3px;
+  padding-left: 3px;
+}
+#discovery-div {
+  padding-top: 10px;
+}
+#bio-pic{
+  margin-top: 50px;
+  height: 50%;
+  width: 50%;
+}
+.glyphicon-triangle-right {
+  font-size: 50px;
+  text-align: center;
+  color: #65a82e;
+}
+.arrow {
+  display: flex;
+  align-self: center;
+  margin-top: -20px;
+}
+.deliverables {
+  display: flex;
+  /*align-self: top;*/
+  justify-content: center;
+}
+#logo {
+  -webkit-filter: grayscale() brightness(0%) invert();
+  height: 30px;
+}
+img.animated {
+  -webkit-animation: filter-animation 5s infinite;
+}
+
+@-webkit-keyframes filter-animation {
+  0% {
+    -webkit-filter: sepia(0) saturate(2);
+  }
+  
+  50% {
+    -webkit-filter: sepia(1) saturate(8);
+  }
+  
+  100% {
+    -webkit-filter: sepia(0) saturate(2);
+  }
+}
+
+#get-started {
+  background-color: transparent;
+  color: #ffffff;
+  font-family: 'Maven Pro', sans-serif;
+}
+#get-started:hover{
+  background-color: #65a82e;
 }
