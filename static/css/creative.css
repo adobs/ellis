@@ -201,7 +201,7 @@ footer p {
 header .header-content {
   text-align: center;
   /*text-transform: uppercase;*/
-  padding: 100px 100px;
+
 }
 @media (min-width: 768px) {
   header {
@@ -213,6 +213,7 @@ header .header-content {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    padding: 100px 100px;
     padding: 0 50px;
   }
   header .header-content .header-content-inner {
@@ -641,6 +642,15 @@ img.animated {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.get-started-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.m-statistic {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 /*cell phone*/
 @media (max-width: 991px) {
