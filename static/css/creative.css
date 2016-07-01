@@ -659,8 +659,6 @@ img.animated {
   background-color: #65a82e;
   border-radius: 4px;
   padding: 15px;
-  width: 70%;
-  margin: 0 auto; 
 }
 /*cell phone*/
 @media (max-width: 991px) {
