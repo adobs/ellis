@@ -674,6 +674,9 @@ img.animated {
     .contact-caption {
       margin-bottom: 15px !important;
     }
+    .contact-i {
+      margin-bottom: 5px !important;
+    }
     .triangle {
       margin-top: 10px !important;
       margin-bottom: 10px !important;
