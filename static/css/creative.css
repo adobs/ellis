@@ -436,12 +436,26 @@ body {
   webkit-tap-highlight-color: #222222;
 }
 
+/*cell phone*/
 @media (max-width: 991px) {
     .mobile-hide {
         display:none !important;
     }
     .desktop-only {
         display: none !important;
+    }
+    .large-header-home {
+      font-size: 12px;
+    }
+    .contact-caption {
+      margin-bottom: 15px;
+    }
+    .triangle {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
 }
@@ -634,4 +648,9 @@ img.animated {
 }
 .product-bullets {
   font-size: 11px;
+}
+#logo-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
