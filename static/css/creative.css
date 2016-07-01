@@ -111,18 +111,18 @@ aside {
   color: #eb3812;
 }
 .navbar-default .nav > li > a,
-.navbar-default .nav > li > a:focus {
+.navbar-default .nav > li > a:focus, i {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 13px;
   color: #222222;
 }
 .navbar-default .nav > li > a:hover,
-.navbar-default .nav > li > a:focus:hover {
+.navbar-default .nav > li > a:focus:hover, i {
   color: #65a82e;
 }
 .navbar-default .nav > li.active > a,
-.navbar-default .nav > li.active > a:focus {
+.navbar-default .nav > li.active > a:focus, i {
   color: #65a82e !important;
   background-color: transparent;
 }
@@ -237,6 +237,9 @@ header .header-content {
 @media (min-width: 992px) {
   .service-box {
     margin: 20px auto 0;
+  }
+  .mobile-only {
+    display: none !important;
   }
 }
 .service-box p {
@@ -433,6 +436,17 @@ body {
   webkit-tap-highlight-color: #222222;
 }
 
+@media (max-width: 991px) {
+    .mobile-hide {
+        display:none !important;
+    }
+    .desktop-only {
+        display: none !important;
+    }
+
+}
+
+
 /*custom css*/
 #transparent-overlay {
   background-color: #302a26;
@@ -443,6 +457,7 @@ body {
 }
 .images-div {
   width: 100%;
+  position: relative;
   min-height: auto;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -452,6 +467,7 @@ body {
   text-align: center;
   padding-top: 80px;
   padding-bottom: 80px;
+
 }
 #services-div {
   background-image: url('../img/services2.jpg');
@@ -491,6 +507,30 @@ li, .copy-content {
   font-family: 'Maven Pro', sans-serif;
   text-align: center;
 }
+.statistic {
+  font-size: 16px;
+  color: white;
+  font-family: 'Maven Pro', sans-serif;
+  text-align: center;
+  background-color: #65a82e;
+  border-radius: 4px;
+  padding: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.contact-caption {
+  font-family: 'Maven Pro', sans-serif;
+  text-align: center; 
+  font-size: 14px;
+}
+#stats {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -508,6 +548,7 @@ li, .copy-content {
   align-items: flex-start;
 }
 #sample-buttons {
+  margin-top: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: #f5f3f1; 
@@ -516,10 +557,15 @@ li, .copy-content {
   margin-right: 5px;
   margin-left: 5px;
 }
-.product, .discovery {
+.discovery {
   width: 25%;
   padding-right: 3px;
   padding-left: 3px;
+}
+.product {
+  width: 25%;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 #discovery-div {
   padding-top: 10px;
@@ -565,7 +611,6 @@ img.animated {
     -webkit-filter: sepia(0) saturate(2);
   }
 }
-
 #get-started {
   background-color: transparent;
   color: #ffffff;
@@ -573,4 +618,20 @@ img.animated {
 }
 #get-started:hover{
   background-color: #65a82e;
+}
+#emailAddress {
+  padding-left: 0;
+  color: #65a82e;
+}
+#email-toggle {
+  padding: 10px 15px;
+}
+#contact-methods {
+  margin-top: 60px;
+}
+.contact-i {
+  margin-bottom: 15px;
+}
+.product-bullets {
+  font-size: 11px;
 }

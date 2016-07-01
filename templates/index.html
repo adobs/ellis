@@ -1,14 +1,10 @@
 <!-- TODO -->
-<!-- fix banner not going to the end -->
-<!-- add icons for contact -->
+
 
 <!-- QUESTIONS -->
 <!-- hide anything on mobile? like the buttons for the tables? -->
-<!-- any addition JS animation?  -->
 
 <!-- Ellis -->
-<!-- add icons for contact in nav just email; on click show -->
-<!-- add stats in about -->
 <!-- turns into sktech of a cat face from lightbulb -->
 <!-- https://s-media-cache-ak0.pinimg.com/236x/93/cb/bf/93cbbf96b5da8bbe9ac2e50d1e80b5d8.jpg -->
 <!DOCTYPE html>
@@ -28,6 +24,7 @@
     <link rel="stylesheet" href="static/css/bootstrap.min.css" type="text/css">
 
     <!-- Custom Fonts -->
+    <link href="/static/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
@@ -35,6 +32,8 @@
     
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="static/css/magnific-popup.css" type="text/css">
+
+    <link rel="stylesheet" href="static/css/5-col.css" type="text/css">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="static/css/creative.css" type="text/css">
@@ -78,6 +77,12 @@
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
+                    <li class="mobile-hide">                            
+                        <i id="email-toggle" class="fa fa-envelope-o fa-2x"></i>
+                    </li>
+                    <li class="mobile-hide">
+                        <a id="emailAddress" href="mailto:enquiries@t3intelligence.com" style="display: none;">enquiries@t3intelligence.com</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -108,21 +113,29 @@
                     <p class="large-header-content">T3 Intelligence</p>
                     <hr>
                     <p class="copy-content">As the war for talent continues to heat up, recruiters and hiring managers need every advantage available to maximize the success of their business.  Recruiting is primarily a sales role, and because of that, hiring managers often can’t prioritize conducting exhaustive research of candidates. That's where T3 Intelligence specializes. The candidate list and contact information we provide allows the recruiter to start reaching out to potential candidates instantly without wasting their time on background. The talent market snapshot we develop makes a reach-out campaign so easy and fast, an expensive dedicated recruiter is often unnecessary. </p>
+                    <div id="stats" style="width: 100%">
+                        <div class="statistic" style="width: 25%">573 rounds of research</div>
+                        <div class="statistic" style="width: 25%">Average of 31 contacts per round</div>
+                        <div class="statistic" style="width: 25%">Placement rates increase up to 2.3x per recruiter</div>
+                        <div class="statistic" style="width: 25%">Decreased average time to hire by 14 days</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="services">
-        <div class="container-fluid">
-            <div class="row images-div" id="services-div">
-                <div class="col-md-4 col-md-offset-4 col-xs-12 text-center">
-                    <p class="large-header-home">Deliverables &amp; Strategy</p>
+        <div id="services-div" class="images-div">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4 col-xs-12 text-center">
+                        <p class="large-header-home">Deliverables &amp; Strategy</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid desktop-only">
             <div class="row">
                 <div class="col-xs-12">
                     <p class="large-header-content">Consistent Agile Pipeline</p>
@@ -159,7 +172,6 @@
             </div>
 
 
-
             <div class="row">
                 <div class="col-xs-12">
                     <p class="large-header-content">Single Search / Fixed Fee</p>
@@ -192,8 +204,66 @@
                     </table>
                 </div>
             </div>
-   
+        </div>
+
+        <div class="container-fluid mobile-only">
             <div class="row">
+                <div class="col-xs-12">
+                    <p class="large-header-content">Consistent Agile Pipeline</p>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row" style="display: flex; justify-content: center">
+                <div class="col-xs-12">
+                    <p class="copy-content">Supporting one recruiter or a whole team, we provide a consistent weekly flow of prospective candidates to fuel the search process. This powerful tool allows the recruiting team to focus their efforts on contact and discussions with qualified candidates instead of endlessly combing the internet. This shift yields faster and more efficient search process and higher quality candidates. We assure minimum numbers of qualified candidates per hour of search, and a detailed target company ecosystem of market research to provide scope context to the market conditions.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <span class="glyphicon glyphicon-triangle-bottom arrow" aria-hidden="true"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="small-header-content">Deliverables</p>
+                    <ul class="copy-content">
+                        <li>At least three names with contact information per hour in candidate list or flowchart</li>
+                        <li>Ecosystem of market research on target companies</li>
+                        <li>Results within 10 days</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="large-header-content">Single Search / Fixed Fee</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="row" style="display: flex; justify-content: center">
+                <div class="col-xs-12">
+                    <p class="copy-content">Supporting a single search, this is designed for an in-depth search with predictable cost. We work in constant communication with recruiters and hiring managers to ensure only the most relevant results. We assure minimum numbers of qualified candidates with contact information in addition to a detailed target company ecosystem of market research to provide scope context to the market conditions.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <span class="glyphicon glyphicon-triangle-bottom arrow" aria-hidden="true"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="small-header-content">Deliverables</p>
+                    <ul class="copy-content">
+                        <li>Ecosystem of market research on target companies</li>
+                        <li>Results within 14 days</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row mobile-hide">
                 <div class="col-md-10 col-md-offset-1 col-xs-12">       
                     <div id="sample-buttons">
                         <div class="flex-container">
@@ -204,7 +274,7 @@
                         </div>
 
                         <div class="collapse" id="discovery-div">
-                            <div class="flex-container-sample">
+                            <div class="flex-container-sample" style="margin-top: 20px;">
                                 <div class="discovery">
                                     <p class="copy-content"><b>Academy DSD Manufacturers</b><br/>
                                     Bimbo Bakeries<br/>
@@ -333,61 +403,61 @@
                         <div class="collapse" id="product-div">
                             <p class="large-header-content">Product Description</p>
                             <hr>
-                            <p class="copy-content">Multi-phase research strategy based on client job specification generates a high quality, and highly targeted list of prospective candidates. This data includes name, company, title, email, phone, address and other links to social media profiles and relevant webpages.<p>
+                            <p class="copy-content">Multi-phase research strategy based on client job specification generates a high quality, and highly targeted list of prospective candidates.<br/>This data includes name, company, title, email, phone, address and other links to social media profiles and relevant webpages.</p>
                             
-                            <p class="small-header-content">Research Technique and Process</p>
+                            <p class="small-header-content" style="margin-top: 40px;">Research Technique and Process</p>
                             <div class="flex-container-sample">
                                 <div class="product">
                                     <p class="copy-content"><b>Define Domain</b></p>
-                                    <p class="copy-content">We begin by researching the background on an open job and the company/industry then strategically determine which industry segments and specific companies are going to provide richest pool of qualified candidates.</p>
+                                    <p class="copy-content product-bullets">We begin by researching the background on an open job and the company/industry then strategically determine which industry segments and specific companies are going to provide richest pool of qualified candidates.</p>
                                 </div>
                                 <div class="product">
                                     <p class="copy-content"><b>Define Search Strategy and Develop Selection Strings</b></p>
-                                    <p class="copy-content">Next we develop a search strategy encompassing many different dimensions of a profile, not simply restricted to key word hits. This multi-dimensional search tool will qualify and disqualify on as many as 100 specific boolean search terms.</p>
+                                    <p class="copy-content product-bullets">Next we develop a search strategy encompassing many different dimensions of a profile, not simply restricted to key word hits. This multi-dimensional search tool will qualify and disqualify on as many as 100 specific boolean search terms.</p>
                                 </div>
                                 <div class="product">
                                     <p class="copy-content"><b>Expert Review</b></p>
-                                    <p class="copy-content">Once our research analysts develop a talent pool, its reviewed by our Executive Team to assure quality and applicability to each individual search.</p>
+                                    <p class="copy-content product-bullets">Once our research analysts develop a talent pool, its reviewed by our Executive Team to assure quality and applicability to each individual search.</p>
                                 </div>
                                 <div class="product">
                                     <p class="copy-content"><b>Contact Build Out</b></p>
-                                    <p class="copy-content">Once the candidate list is properly refined we build out each profile with contact information, professional profiles and social media profiles.</p>
+                                    <p class="copy-content product-bullets">Once the candidate list is properly refined we build out each profile with contact information, professional profiles and social media profiles.</p>
                                 </div>
                             </div>
                             
-                            <p class="small-header-content">Business Results / Value Proposition</p>
+                            <p class="small-header-content" style="margin-top: 40px;">Business Results / Value Proposition</p>
                             <div class="flex-container-sample" style="text-align: center">
                               <div class="product">
                                     <p class="copy-content"><b>Search Results</b>
                                         <ul>
-                                            <li>Faster launch - recruiters can call dozens, and email dozens, more candidates on the first day the search is formally launched.</li>
-                                            <li>Better quality - professional research provides a greater number of qualified prospective candidates driving better results and broader selection of finalists giving management more, and better, candidates to choose from.</li>
-                                            <li>Ongoing T3 research for a single high volume role with multiple positions with the same title will provide the recruiting team with the broadest and deepest pool of talent possible.</li>
+                                            <li class="product-bullets">Faster launch - recruiters can call dozens, and email dozens, more candidates on the first day the search is formally launched.</li>
+                                            <li class="product-bullets">Better quality - professional research provides a greater number of qualified prospective candidates driving better results and broader selection of finalists giving management more, and better, candidates to choose from.</li>
+                                            <li class="product-bullets">Ongoing T3 research for a single high volume role with multiple positions with the same title will provide the recruiting team with the broadest and deepest pool of talent possible.</li>
                                         </ul>
                                     </p>
                                 </div>
                                 <div class="product">       
                                 <p class="copy-content"><b>Team Results</b>
                                         <ul>
-                                            <li>Increased recruiting team performance - improving recruiter placements per year, speed to completion, and placement retention rate, due to better overall fit and quality.</li>
+                                            <li class="product-bullets">Increased recruiting team performance - improving recruiter placements per year, speed to completion, and placement retention rate, due to better overall fit and quality.</li>
                                         </ul>
                                     </p>
                                 </div>
                                 <div class="product">
                                     <p class="copy-content"><b>Strategic Advantage</b>
                                         <ul>
-                                            <li>Methodical research - Research based on strategy and not just available network opens up the potential pool sourced from hundreds to hundreds of millions collectively elevating the talent pool of the company.</li>
+                                            <li class="product-bullets">Methodical research - Research based on strategy and not just available network opens up the potential pool sourced from hundreds to hundreds of millions collectively elevating the talent pool of the company.</li>
                                         </ul>
                                     </p>
                                 </div>
                                 <div class="product">
                                     <p class="copy-content"><b>Common Problems Address by T3 Research</b>
                                         <ul>
-                                            <li>Prolonged search timelines and searches that seem to go on forever</li>
-                                            <li>Small candidate slates, limiting choices and forcing compromise to fill positions</li>
-                                            <li>Spikes in search load overloading recruiting team</li>
-                                            <li>Poor recruiting team retention and morale</li>
-                                            <li>Poor quality candidate pools</li>           
+                                            <li class="product-bullets">Prolonged search timelines and searches that seem to go on forever</li>
+                                            <li class="product-bullets">Small candidate slates, limiting choices and forcing compromise to fill positions</li>
+                                            <li class="product-bullets">Spikes in search load overloading recruiting team</li>
+                                            <li class="product-bullets">Poor recruiting team retention and morale</li>
+                                            <li class="product-bullets">Poor quality candidate pools</li>           
                                         </ul>
                                     </p> 
                                 </div>                           
@@ -395,7 +465,7 @@
                         </div> 
 
                         <div class="collapse" id="candidate-div">
-                            <div class="flex-container">
+                            <div class="flex-container" style="margin-top: 20px;">>
                                 <table id="candidate" style="width: 95%" class="table-responsive table-hover">
                                     <col style="width:4%"> <!-- first -->
                                     <col style="width:5%"> <!-- last -->
@@ -480,40 +550,58 @@
     </section>
 
     <section id="people">
-        <div class="container-fluid">
-            <div class="row images-div" id="people-div">
-                <div class="col-xs-12 text-center">
-                    <p class="large-header-home">People</p>
+        <div id="people-div" class="images-div">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p class="large-header-home">People</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4 col-md-offset-1 text-center">
-                <img id="bio-pic" class="img-responsive" src="/static/img/ellis.jpg">
-            </div>
-            <div class="col-md-6" id="bio">
-                <p class="large-header-content">Ellis Briery</p>
-                <hr>
-                <p class="copy-content">A young self-starter, Ellis was originally recruited to JC Penney straight out of college. He quickly dominated the research effort for executive search during their truncated transformation. An expert at research and an innovator in the department at JC Penney, Ellis had found where his true talent lay. After a tour in the agency technical recruiting industry at Riviera Partners, Ellis took advantage of the unique opportunity to start a business based around doing what he loved and excelled at.</p>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-1 text-center">
+                    <img id="bio-pic" class="img-responsive" src="/static/img/ellis.jpg">
+                </div>
+                <div class="col-md-6" id="bio">
+                    <p class="large-header-content">Ellis Briery</p>
+                    <hr>
+                    <p class="copy-content">A young self-starter, Ellis was originally recruited to JC Penney straight out of college. He quickly dominated the research effort for executive search during their truncated transformation. An expert at research and an innovator in the department at JC Penney, Ellis had found where his true talent lay. After a tour in the agency technical recruiting industry at Riviera Partners, Ellis took advantage of the unique opportunity to start a business based around doing what he loved and excelled at.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact">
-        <div class="container-fluid">
-            <div class="row images-div" id="contact-div">
-                <div class="col-xs-12 text-center">
-                    <p class="large-header-home">Contact Us</p>
+        <div id="contact-div" class="images-div">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <p class="large-header-home">Contact Us</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-xs-12 text-center">
-                <p class="large-header-content">Contact Methods</p>
-                <hr>
-                <p class="copy-content">Email:
-                    <a href="mailto:enquiries@t3intelligence.com">enquiries@t3intelligence.com</a>
-                </p>
-                <p class="copy-content">Phone: 1.415.937.1420</p>
-                <p class="copy-content">
-                    <a href="https://www.linkedin.com/company/t3-search">Find T3 on LinkedIn</a>
-                </p>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row" id="contact-methods">
+                <div class="col-md-15">
+                    <!-- placeholder for spacing -->
+                </div>
+                <div class="col-md-15 col-xs-12" style="text-align: center">
+                    <i class="fa fa-envelope-o fa-5x sr-contact contact-i"></i><br/>
+                    <a class="contact-caption" href="mailto:enquiries@t3intelligence.com">enquiries@t3intelligence.com</a>
+                </div>
+                <div class="col-md-15 col-xs-12" style="text-align: center">
+                    <i class="fa fa-phone fa-5x sr-contact contact-i"></i><br/>
+                    <p class="contact-caption">+1.415.937.1420</p>
+                </div>
+                <div class="col-md-15 col-xs-12" style="text-align: center">
+                    <i class="fa fa-linkedin-square fa-5x sr-contact contact-i"></i><br/>
+                    <a class="contact-caption" href="https://www.linkedin.com/company/t3-search">www.linkedin.com/company/t3-search</a>
+                </div>
             </div>
         </div>
     </section>
@@ -545,11 +633,7 @@
     <script src="static/js/creative.js"></script>
 
     <script>
-    // var headerHeight = $('header').height();
-    // $('#transparent-overlay').height(headerHeight);
 
-    // var picHeight = $('#bio').height();
-    // $('#bio-pic').height(picHeight);
 
     $('#discovery-button').click(function(e){
         $('#product-div').removeClass('in');
@@ -562,6 +646,10 @@
     $('#candidate-button').click(function(e){
         $('#product-div').removeClass('in');
         $('#discovery-div').removeClass('in');
+    });
+
+    $('#email-toggle').click(function (e) {
+        $('#emailAddress').toggle();
     });
     
     
