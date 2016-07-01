@@ -571,7 +571,7 @@ li, .copy-content {
   color: #65a82e;
 }
 .glyphicon-triangle-bottom {
-  font-size: 20px;
+  font-size: 40px;
   text-align: center;
   color: #65a82e;
 }
@@ -682,10 +682,12 @@ img.animated {
       display: flex !important;
       align-items: center !important;
       justify-content: center !important;
-      font-size: 20px;
     }
     .contact-i:nth-child(2), .contact-i:nth-child(3) {
       margin-top: 25px;
+    }
+    header {
+      padding-bottom: 15px;
     }
 
 }
