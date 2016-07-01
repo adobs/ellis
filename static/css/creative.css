@@ -569,6 +569,11 @@ li, .copy-content {
   text-align: center;
   color: #65a82e;
 }
+.glyphicon-triangle-bottom {
+  font-size: 20px;
+  text-align: center;
+  color: #65a82e;
+}
 .arrow {
   display: flex;
   align-self: center;
@@ -641,7 +646,7 @@ img.animated {
         display: none !important;
     }
     .large-header-home {
-      font-size: 12px !important;
+      font-size: 32px !important;
     }
     .contact-caption {
       margin-bottom: 15px !important;
