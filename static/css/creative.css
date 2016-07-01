@@ -681,8 +681,8 @@ img.animated {
       align-items: center !important;
       justify-content: center !important;
     }
-    .contact-i:nth-child(2), .contact-i:nth-child(3) {
-      margin-top: 25px;
+    #phone-div, #linkedin-div {
+      margin-top: 20px;
     }
     header {
       padding-bottom: 15px;
