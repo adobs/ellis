@@ -436,31 +436,6 @@ body {
   webkit-tap-highlight-color: #222222;
 }
 
-/*cell phone*/
-@media (max-width: 991px) {
-    .mobile-hide {
-        display:none !important;
-    }
-    .desktop-only {
-        display: none !important;
-    }
-    .large-header-home {
-      font-size: 12px;
-    }
-    .contact-caption {
-      margin-bottom: 15px;
-    }
-    .triangle {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-}
-
-
 /*custom css*/
 #transparent-overlay {
   background-color: #302a26;
@@ -653,4 +628,30 @@ img.animated {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+/*cell phone*/
+@media (max-width: 991px) {
+    .mobile-hide {
+        display:none !important;
+    }
+    .desktop-only {
+        display: none !important;
+    }
+    .large-header-home {
+      font-size: 12px !important;
+    }
+    .contact-caption {
+      margin-bottom: 15px !important;
+    }
+    .triangle {
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+    }
+
 }
